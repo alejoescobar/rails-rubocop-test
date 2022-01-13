@@ -44,7 +44,7 @@ group :development do
   gem "rubocop-rails", "~> 2.13"
   gem "rubocop-rspec", "~> 2.7"
   gem "rubocop-performance", "~> 1.13", ">= 1.13.1"
-  gem 'brakeman', '~> 5.2'
+  gem 'brakeman', "~> 5.2"
 end
 
 group :test do
