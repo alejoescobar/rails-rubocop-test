@@ -16,3 +16,4 @@ jobs:
         with:
           brakeman_version: gemfile
           reporter: github-pr-review
+          GITHUB_TOKEN: ${{ github.token }}
