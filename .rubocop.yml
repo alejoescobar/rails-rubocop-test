@@ -66,10 +66,11 @@ Style/SymbolArray:
   Enabled: false
 
 # https://stackoverflow.com/a/24393133/4559949
+# Enable when we've arrived at consensus
 Style/ClassAndModuleChildren:
   Description: 'Checks style of children classes and modules.'
   Enabled: false
-  EnforcedStyle: nested
+  EnforcedStyle: compact
 
 Style/CollectionMethods:
   Enabled: true
