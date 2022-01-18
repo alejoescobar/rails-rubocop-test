@@ -1,4 +1,4 @@
-name: reviewdog
+name: Brakeman
 on: [pull_request]
 jobs:
   brakeman:
@@ -7,6 +7,10 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v1
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0.0
       - name: brakeman
         uses: reviewdog/action-brakeman@v2
         with:
