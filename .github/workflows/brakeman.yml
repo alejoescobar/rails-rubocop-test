@@ -7,12 +7,9 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v1
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.0.0
       - name: brakeman
-        uses: reviewdog/action-brakeman@v2
+        uses: reviewdog/action-brakeman@v1
         with:
-          brakeman_version: gemfile
+          brakeman_version: 4.8.2
+          github_token: ${{ secrets.github_token }}
           reporter: github-pr-review # Default is github-pr-check
